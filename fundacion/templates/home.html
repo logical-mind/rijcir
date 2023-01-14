@@ -1,0 +1,312 @@
+{% extends 'layout.html' %} 
+{% load static %}
+
+{% block slide %}
+
+<header>
+   
+    <!-- Background image -->
+    <div class="relative overflow-hidden bg-no-repeat bg-cover" style="
+      background-position: 50%;
+      background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/146.webp');
+      height: 350px;
+    ">
+      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.75)">
+        <div class="flex justify-center items-center h-full">
+          <div class="text-center text-white px-6 md:px-12">
+            <h1 class="text-5xl font-bold mt-0 mb-6">Red Interdenominacional</h1>
+            <h3 class="text-4xl font-bold mb-8">de Jovenes Cristianos</h3>
+            <a href="{% url 'registro' %}" type="button"
+              class="inline-block px-6 py-2.5 border-2 border-white text-white font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              data-mdb-ripple="true" data-mdb-ripple-color="light">
+              ¡Inscribete!
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+{% endblock %}
+
+{% block home %}
+
+<section class="text-gray-600 body-font bg-[#F4F3FA] h-screen">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4 text-center">
+
+        <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Catolica</h2>
+                <h3 id="catolica" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/catolica2.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Adventista</h2>
+                <h3 id="adventista" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/adventista.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Evangelica</h2>
+                <h3 id="evangelica" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/evangelica.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Testigo de Jehova</h2>
+                <h3 id="testigo" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/testigos.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Mormones</h2>
+                <h3  id="mormones" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/mormones.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Universal</h2>
+                <h3 id="universal" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/universal.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Cristiana</h2>
+                <h3 id="cristiana" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/cristiana.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Otra</h2>
+                <h3 id="otra" class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/otras.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Iglesia</h2>
+                <h3 class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/catolica2.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Iglesia</h2>
+                <h3 class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/catolica2.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Iglesia</h2>
+                <h3 class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/catolica2.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 sm:w-1/2 lg:w-1/6 w-full ">
+            <div class=" flex items-center  justify-between p-4  rounded-lg bg-white shadow-indigo-50 shadow-md">
+              <div>
+                <h2 class="text-gray-900 text-lg font-bold">Iglesia</h2>
+                <h3 class="mt-2 text-xl font-bold text-green-500 text-left"></h3>
+              </div>
+              <div
+                class="bg-gradient-to-tr from-white-600 to-indigo-600 w-32 h-32  rounded-full shadow-2xl shadow-[#304FFE] border-white  border-dashed border-2  flex justify-center items-center ">
+                <div>
+                  <img src="{% static "img/catolica2.png" %}" alt="Portada" width="150px" height="150px">  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+    
+      </div>
+    </div>
+</section>
+
+<script>
+  let catolica = 0;
+  let adventista = 0;
+  let evangelica = 0;
+  let testigo = 0;
+  let mormona = 0;
+  let universal = 0;
+  let cristiana = 0;
+  let otra = 0;
+</script>
+{% for datos in datoss %}
+{% if datos.denominacion == "CATOLICA" %}
+<script>
+  catolica = catolica + 1; 
+  document.getElementById('catolica').innerHTML = catolica;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "ADVENTISTA" %}
+<script>
+  adventista = adventista + 1; 
+  document.getElementById('adventista').innerHTML = adventista;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "EVANGELICA" %}
+<script>
+  evangelica = evangelica + 1; 
+  document.getElementById('evangelica').innerHTML = evangelica;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "TESTIGO DE JEHOVA" %}
+<script>
+  testigo = testigo + 1; 
+  document.getElementById('testigo').innerHTML = testigo;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "MORMONA" %}
+<script>
+  mormona = mormona + 1; 
+  document.getElementById('mormona').innerHTML = mormona;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "UNIVERSAL" %}
+<script>
+  universal = universal + 1; 
+  document.getElementById('universal').innerHTML = universal;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "CRISTIANA" %}
+<script>
+  cristiana = cristiana + 1; 
+  document.getElementById('cristiana').innerHTML = cristiana;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "OTRA" %}
+<script>
+  otra = otra + 1; 
+  document.getElementById('otra').innerHTML = otra;
+</script>
+{% endif %}
+
+{% if datos.denominacion == "CATOLICA" %}
+<script>
+  catolica = catolica + 1; 
+  document.getElementById('catolica').innerHTML = catolica;
+</script>
+{% endif %}
+
+
+
+
+
+
+
+
+{% endfor %}
+
+
+{% endblock %}
+
+
